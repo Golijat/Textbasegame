@@ -1,0 +1,4 @@
+{"Sword": 5}
+[{"type": "health", "Health Potion": 10}, {"type": "dmg_inc", "Damage Potion": 5}]
+
+Sparning av orginella inventoryt ifall det overwriteas.

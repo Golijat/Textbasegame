@@ -139,10 +139,13 @@ def player_turn():
                         if type == "health" and x == which_item:
                             player.hp += b
                             print(f"You healed {b} hp, you now have {player.hp} hp.\n")
+                            del inventory.items[x-1]
+
                         elif type == "dmg_inc" and x == which_item:
                             player.dmg += b
                             turn_counter = 2
                             print("You drank the potion, you now deal 5 extra dmg for two turns\n")
+                            del inventory.items[x-1]
                         x += 1
                 enemy_turn()
 

@@ -3,8 +3,11 @@ from tokenize import Name
 
 class Inventory:
     def __init__(self, start_weapons={}, start_items=[]):
+        # Inventory't får in information om vad som ska finnas i inventoryt.
+        # 
         self.weapons = start_weapons
         self.items = start_items
+
 
     def add_item(self, Name, Value):
         self.weapons[Name] = Value

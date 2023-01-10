@@ -2,7 +2,6 @@ from ast import Or
 from multiprocessing.sharedctypes import Value
 import os
 from pydoc import plain
-import intro
 from battle import battle_start
 import time
 from minigame import minigame
@@ -19,8 +18,8 @@ def menu():
         "\n5. Exit"
         "\n ==>")) 
         if choice == 1:
-            f = open('./save.txt', 'w', encoding='utf-8')
-            f.close
+            open('./save.txt', 'w', encoding='utf-8').close()
+            time.sleep(1)
             battle_start()
         elif choice == 2:
             battle_start()
